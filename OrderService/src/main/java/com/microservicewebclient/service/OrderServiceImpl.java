@@ -58,12 +58,14 @@ public class OrderServiceImpl implements OrderService {
             order.setCustomerId(orderRequest.getCustomerId());
             order.setProductIds(orderRequest.getProducts());
             order.setTotalPrice(totalPrice);
+            order.setEmail(customer.getEmail());
 
             return orderRepository.save(order);
         }
     }
-//
-//@Service
+
+
+//@Service 2nd way
 //public class OrderServiceImpl implements OrderService {
 //
 //    @Autowired
@@ -119,7 +121,7 @@ public class OrderServiceImpl implements OrderService {
 
 
 //
-//@Service
+//@Service 3rd way
 //public class OrderServiceImpl implements OrderService {
 //
 //    private final WebClient webClient = WebClient.create("http://localhost:9091");
@@ -166,7 +168,7 @@ public class OrderServiceImpl implements OrderService {
 
 
 //
-//@Service
+//@Service 4th way
 //public class OrderServiceImpl implements OrderService {
 //
 //    // WebClient for Customer Service (Server 1)

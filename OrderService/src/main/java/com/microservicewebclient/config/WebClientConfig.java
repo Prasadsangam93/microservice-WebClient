@@ -10,19 +10,3 @@ public class WebClientConfig {
         return WebClient.builder();
     }
 }
-//
-//
-//
-//
-//@Configuration
-//public class WebClientConfig {
-//
-//    @Bean
-//    public WebClient customerWebClient() {
-//        return WebClient.create("http://localhost:9091"); // Customer service base URL
-//    }
-//
-//    @Bean
-//    public WebClient productWebClient() {
-//        return WebClient.create("http://localhost:9092"); // Product service base URL
-//    }
